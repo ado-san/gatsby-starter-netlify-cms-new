@@ -10,7 +10,7 @@ description: >-
   old but is suitable for anybody interested to learn or deepen his knowledge in
   many area.
 featuredpost: true
-featuredimage: /img/kano-computer-kit-touch.jpg
+featuredimage: /img/kano-logo.png
 tags:
   - kano
   - raspberryPi
