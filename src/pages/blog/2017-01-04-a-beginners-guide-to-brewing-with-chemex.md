@@ -1,29 +1,32 @@
 ---
 templateKey: blog-post
-title: A beginners’ guide to brewing with Chemex
+title: >-
+  Donate your old computer to Labdoo : an easy way to contribute to education
+  !   (◕‿◕✿)
 date: 2017-01-04T15:04:10.000Z
+description: >-
+  LABDOO is a humanitarian social network joined by people around the world who
+  want to make our planet a better place by providing those in underdeveloped
+  regions (both in the developing and the developed world) a chance at a better
+  education. The goal of the social network is to send unused laptops, ebook
+  readers, tablet-PCs and any device that can be loaded with educational
+  software to needy schools around the world using collaboration and without
+  incurring any economic nor environmental costs.
 featuredpost: false
-featuredimage: /img/chemex.jpg
-description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
+featuredimage: /img/labdoo-small.png
 tags:
-  - brewing
-  - chemex
+  - donation
+  - education
+  - labdoo
+  - edubuntu
+  - humanitarian
+  - socialnetwork
+  - charity
 ---
-![chemex](/img/chemex.jpg)
+![labdoo](/img/labdoo-blue.jpg "labdoo")
 
-This week we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts.
+I heard recently about labdoo and gave it a try. I liked the concept of donating old laptops with edubuntu - a linux loaded with educational programs. You can just donate your old devices, but you can as well carry some during your next trip to deliver them to a school nearby your next holiday destination.
 
-In 1958, designers at the [Illinois Institute of Technology](https://www.spacefarm.digital) said that the Chemex Coffeemaker is _"one of the best-designed products of modern times"_, and so is included in the collection of the Museum of Modern Art in New York City.
+It is very easy to do, alone or in groups, there are a lot of ressources on their website, let me walk you through !
 
-## The little secrets of Chemex brewing
-
-The Chemex Coffeemaker consists of an hourglass-shaped glass flask with a conical funnel-like neck (rather than the cylindrical neck of an Erlenmeyer flask) and uses proprietary filters, made of bonded paper (thicker-gauge paper than the standard paper filters for a drip-method coffeemaker) that removes most of the coffee oils, brewing coffee with a taste that is different than coffee brewed in other coffee-making systems; also, the thicker paper of the Chemex coffee filters may assist in removing cafestol, a cholesterol-containing compound found in coffee oils. Here’s three important tips newbies forget about:
-
-1. Always buy dedicated Chemex filters.
-2. Use a scale, don’t try to eyeball it.
-3. Never skip preheating the glass.
-4. Timing is key, don’t forget the clock.
-
-The most visually distinctive feature of the Chemex is the heatproof wooden collar around the neck, allowing it to be handled and poured when full of hot water. This is turned, then split in two to allow it to fit around the glass neck. The two pieces are held loosely in place by a tied leather thong. The pieces are not tied tightly and can still move slightly, retained by the shape of the conical glass.
-
-For a design piece that became popular post-war at a time of Modernism and precision manufacture, this juxtaposition of natural wood and the organic nature of a hand-tied knot with the laboratory nature of glassware was a distinctive feature of its appearance.
+https://www.labdoo.org/content/labdoo-videos
