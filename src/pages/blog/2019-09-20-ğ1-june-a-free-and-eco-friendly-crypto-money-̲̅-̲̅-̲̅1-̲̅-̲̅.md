@@ -13,7 +13,7 @@ tags:
   - g1
   - blockchain
 ---
-The crypto-money G1 is based technically on the blockchain but without the ecological aberration roofOfWork and on the Relative Theory of Money (TRM) published by S. Laborde (here : https://en.trm.creationmonetaire.info/) in english).
+The crypto-money G1 is based technically on the blockchain but without the ecological aberration ProofOfWork and on the Relative Theory of Money (TRM) published by S. Laborde (here : https://en.trm.creationmonetaire.info/) in english.
 
 ![june](/img/june-image.jpg "june")
 
