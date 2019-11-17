@@ -25,6 +25,8 @@ Gatsby.js builds the fastest possible website. Instead of waiting to generate pa
 
 Source : https://blog.logrocket.com/why-you-should-be-using-jamstack/
 
-https://strapi.io/blog/jamstack
+https://strapi.io/blog/jamstack  
+
+https://zocada.com/deep-dive-gatsby-building-a-simple-static-blog-using-gatsby-react-and-graphql/
 
 https://www.netlify.com/pdf/oreilly-modern-web-development-on-the-jamstack.pdf
