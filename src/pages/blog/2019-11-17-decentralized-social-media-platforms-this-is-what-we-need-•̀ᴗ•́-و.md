@@ -19,9 +19,7 @@ tags:
   - decentralized
   - diaspora
 ---
-Would you agree to give all your data to the same company ? Certainly not, but you (and I) do it anyway.. We all accept the long and unread GAFAM Terms & Conditions to use their services. It is an habit that can stop, as soon as we are aware of it and of the alternatives.
-
-That is precisely what I want to talk about, the alternatives. Because the only benefit Facebook has is the number of people on it, we should promote respectful and user-friendly alternatives. 
+![mastodon diaspora](/img/twitter-to-mastodon.png "mastodon diaspora")
 
 Why decentralized social medias ? Because it allows anybody to host his own data. And if it is too difficult to do so you can choose where your data will be stored : in your city, on your friend server, in your region/country,...
 
