@@ -13,6 +13,7 @@ const TemplateWrapper = ({ children }) => {
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
+        <meta name="google-site-verification" content="LB-fyo-R-__mhapozznmsScHKQyNYHnY6rGCQmeRKUs" />
         <meta name="description" content={description} />
         <link rel="icon" href={favicon} />
 
