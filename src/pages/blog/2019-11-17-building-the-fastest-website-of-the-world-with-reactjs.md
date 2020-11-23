@@ -30,3 +30,5 @@ https://strapi.io/blog/jamstack
 https://zocada.com/deep-dive-gatsby-building-a-simple-static-blog-using-gatsby-react-and-graphql/
 
 https://www.netlify.com/pdf/oreilly-modern-web-development-on-the-jamstack.pdf
+
+https://buzut.net/sites-statiques-et-jamstack-la-revolution-frontend/
