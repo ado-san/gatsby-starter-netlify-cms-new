@@ -1,4 +1,5 @@
 import 'bulma/css/bulma.min.css'
+import Script from 'next/script'
 import './globals.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -29,6 +30,10 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <Script
+          src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )

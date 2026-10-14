@@ -40,7 +40,7 @@ fs.copyFileSync(adminEntry, path.join(adminDestination, 'index.html'))
 const adminConfigPath = path.join(adminDestination, 'config.yml')
 const adminConfig = parse(fs.readFileSync(adminConfigPath, 'utf8'))
 adminConfig.backend.branch =
-  process.env.CONTEXT === 'production'
-    ? 'master'
-    : process.env.BRANCH || 'feature/nextjs-migration'
+  process.env.CMS_BRANCH ||
+  process.env.BRANCH ||
+  (process.env.CONTEXT === 'production' ? 'master' : 'feature/nextjs-migration')
 fs.writeFileSync(adminConfigPath, stringify(adminConfig))

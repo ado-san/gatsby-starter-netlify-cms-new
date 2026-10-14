@@ -11,4 +11,4 @@ npm run dev
 
 The beta runs on port 3001. To create the static Netlify preview build, run `npm run build`; Netlify should use `next-preview` as the site base directory and publish `out`.
 
-The admin is available at `/admin/` and uses the existing Decap collections. Netlify Identity and Git Gateway must be enabled for the Netlify site, and editors must be invited through Netlify Identity. Preview builds target their current Git branch; production builds target `master`. The preview cannot change production content.
+The admin is available at `/admin/` and uses the existing Decap collections. Netlify Identity and Git Gateway must be enabled for the Netlify site, and editors must be invited through Netlify Identity. The Identity widget is also loaded on the home page because Netlify invitation links open at the site root. The CMS targets `CMS_BRANCH`, then Netlify's current `BRANCH`, and finally defaults to `master` for production or the migration branch for previews.
