@@ -1,0 +1,25 @@
+{
+  "name": "ad-ventures-next-preview",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "predev": "node scripts/sync-assets.mjs",
+    "dev": "next dev --hostname 0.0.0.0 --port 3001",
+    "prebuild": "node scripts/sync-assets.mjs",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0 --port 3001"
+  },
+  "dependencies": {
+    "bulma": "1.0.4",
+    "gray-matter": "4.0.3",
+    "markdown-it": "15.0.2",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "yaml": "2.9.1"
+  }
+}
