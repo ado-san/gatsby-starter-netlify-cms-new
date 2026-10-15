@@ -7,6 +7,7 @@
   --wash: #f4f7f2;
   --line: #dfe7dc;
   --muted: #637064;
+  --beige: #f5efe4;
 }
 
 * {
@@ -32,6 +33,10 @@ a:hover {
   color: var(--ink);
 }
 
+strong {
+  color: var(--ink);
+}
+
 .site-header {
   background: rgba(255, 255, 255, 0.97);
   border-bottom: 1px solid rgba(43, 37, 35, 0.08);
@@ -47,6 +52,13 @@ a:hover {
 .site-header .navbar.is-transparent,
 .site-header .navbar-menu {
   background-color: #ffffff;
+}
+
+.site-header .navbar-brand .navbar-item,
+.site-header .navbar-brand .navbar-item:hover,
+.site-header .navbar-brand .navbar-item:focus,
+.site-header .navbar-brand .navbar-item:active {
+  background-color: transparent;
 }
 
 .site-header .navbar-item img {
@@ -69,8 +81,12 @@ a:hover {
 }
 
 .navbar-start .navbar-item:hover,
-.navbar-end .navbar-item:hover {
-  background: transparent;
+.navbar-end .navbar-item:hover,
+.navbar-start .navbar-item:focus,
+.navbar-end .navbar-item:focus,
+.navbar-start .navbar-item:active,
+.navbar-end .navbar-item:active {
+  background-color: var(--beige);
   color: var(--brand-dark);
 }
 
