@@ -7,3 +7,7 @@ out/
 
 .DS_Store
 *.log
+
+# Leftover Gatsby build artifacts (safe to delete)
+/.cache/
+/public/

@@ -1,103 +1,34 @@
-# Gatsby + Netlify CMS Starter
+# AD Ventures — ad-ventures.cc
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
+Source of [ad-ventures.cc](https://ad-ventures.cc): a static Next.js website about open source, ventures, web technology, AI and sovereign cloud.
 
-**Note:** This starter uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
+## Structure
 
-This repo contains an example business website that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://gatsby-netlify-cms.netlify.com/)**.
+- `next-preview/` — the Next.js (App Router) application, exported as static HTML (`output: 'export'`).
+- `src/pages/**/*.md` — content (home, about, products and blog posts), edited with Decap CMS.
+- `src/img/`, `static/img/` — images, copied to `next-preview/public/img` before each build.
+- `static/admin/config.yml` — Decap CMS configuration, served at `/admin/`.
+- `netlify.toml` — Netlify build settings (base `next-preview`, publish `out`).
 
-It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
+## Development
 
-## Features ##
+Use Node.js 22 or later:
 
-- A simple landing page with blog functionality built with Netlify CMS
-- Editabe Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
-- Create Blog posts from Netlify CMS
-- Tags: Separate page for posts under each tag
-- Basic directory organization
-- Uses Bulma for styling, but size is reduced by `purge-css-plugin`
-- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
-- Uses `gatbsy-image` with Netlify-CMS preview support
-- Separate components for everything
-- Netlify deploy configuration
-- Netlify function support, see `src/lambda` folder
-- Perfect score on Lighthouse for SEO, Accessibility and Performance (wip:PWA)
-- ..and more
-
-## Prerequisites
-
-- Node (I recommend using v8.2.0 or higher)
-- [Gatsby CLI](https://www.gatsbyjs.org/docs/)
-
-## Getting Started (Recommended)
-
-Netlify CMS can run in any frontend web environment, but the quickest way to try it out is by running it on a pre-configured starter site with Netlify. The example here is the Kaldi coffee company template (adapted from [One Click Hugo CMS](https://github.com/netlify-templates/one-click-hugo-cms)). Use the button below to build and deploy your own copy of the repository:
-
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/gatsby-starter-netlify-cms&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
-
-After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete. Next, you’ll need to set up Netlify’s Identity service to authorize users to log in to the CMS.
-
-### Access Locally
-```
-$ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
-$ cd [REPO_NAME]
-$ yarn
-$ npm run start
-```
-To test the CMS locally, you'll need run a production build of the site:
-```
-$ npm run build
-$ npm run serve
+```bash
+cd next-preview
+npm install
+npm run dev     # http://localhost:3001
+npm run build   # static export in next-preview/out
 ```
 
-### Media Libraries (installed, but optional)
+## Content
 
-Media Libraries have been included in this starter as a default. If you are not planning to use `Uploadcare` or `Cloudinary` in your project, you **can** remove them from module import and registration in `src/cms/cms.js`. Here is an example of the lines to comment or remove them your project.
-```javascript
-import CMS from 'netlify-cms-app'
-// import uploadcare from 'netlify-cms-media-library-uploadcare'
-// import cloudinary from 'netlify-cms-media-library-cloudinary'
+Blog posts live in `src/pages/blog/` and are named `YYYY-MM-DD-ascii-slug.md`; the file name is the URL. Keep file names ASCII (titles can contain emojis). Old URLs are redirected in `next-preview/public/_redirects`.
 
-import AboutPagePreview from './preview-templates/AboutPagePreview'
-import BlogPostPreview from './preview-templates/BlogPostPreview'
-import ProductPagePreview from './preview-templates/ProductPagePreview'
-import IndexPagePreview from './preview-templates/IndexPagePreview'
+## Contact form
 
-// CMS.registerMediaLibrary(uploadcare);
-// CMS.registerMediaLibrary(cloudinary);
+The contact form uses Netlify Forms. The form is declared in `next-preview/public/__forms.html` so Netlify detects it at deploy time, and submitted with `fetch` from `next-preview/components/ContactForm.js`. Email notifications are configured in the Netlify UI (Forms → Form notifications).
 
-CMS.registerPreviewTemplate('index', IndexPagePreview)
-CMS.registerPreviewTemplate('about', AboutPagePreview)
-CMS.registerPreviewTemplate('products', ProductPagePreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
+## License
 
-```
-
-## Getting Started (Without Netlify)
-```
-$ gatsby new [SITE_DIRECTORY_NAME] https://github.com/netlify-templates/gatsby-starter-netlify-cms/
-$ cd [SITE_DIRECTORY_NAME]
-$ npm run build
-$ npm run serve
-```
-
-### Setting up the CMS
-Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting.
-
-## Debugging
-Windows users might encounter ```node-gyp``` errors when trying to npm install.
-To resolve, make sure that you have both Python 2.7 and the Visual C++ build environment installed.
-```
-npm config set python python2.7
-npm install --global --production windows-build-tools
-```
-
-[Full details here](https://www.npmjs.com/package/node-gyp 'NPM node-gyp page')
-
-## Purgecss
-This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma builds are usually ~170K but reduced 90% by purgecss.
-
-# CONTRIBUTING
-
-Contributions are always welcome, no matter how large or small. Before contributing,
-please read the [code of conduct](CODE_OF_CONDUCT.md).
+MIT, see [LICENSE](LICENSE).
