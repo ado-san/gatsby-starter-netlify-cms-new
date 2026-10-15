@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import StoryGrid from '../../../components/StoryGrid'
 import { getAllTags, getPostsByTag } from '../../../lib/content'
+import { pageMetadata } from '../../../lib/site'
 
 export const dynamicParams = false
 
@@ -13,7 +14,13 @@ export async function generateMetadata({ params }) {
   const { tag: tagSlug } = await params
   const tag = getAllTags().find(item => item.slug === tagSlug)
 
-  return { title: tag ? `${tag.label} | Tags` : 'Tag not found' }
+  if (!tag) return { title: 'Tag not found' }
+
+  return pageMetadata({
+    title: `${tag.label}: articles and guides`,
+    description: `AD Ventures articles about ${tag.label}.`,
+    path: `/tags/${tag.slug}/`,
+  })
 }
 
 export default async function TagPage({ params }) {

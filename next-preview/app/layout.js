@@ -3,19 +3,57 @@ import Script from 'next/script'
 import './globals.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import JsonLd from '../components/JsonLd'
+import {
+  author,
+  feedAlternate,
+  organizationJsonLd,
+  siteDescription,
+  siteKeywords,
+  siteName,
+  siteTitle,
+  siteUrl,
+} from '../lib/site'
 
 export const metadata = {
-  metadataBase: new URL('https://ad-ventures.cc'),
-  title: 'Ad Ventures - Digital Solutions',
-  description:
-    'Ad Ventures website is built with Gatsby, and Netlify CMS. It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteTitle,
+    template: `%s | ${siteName}`,
+  },
+  description: siteDescription,
+  applicationName: siteName,
+  keywords: siteKeywords,
+  authors: [author],
+  creator: author.name,
+  publisher: siteName,
+  alternates: { types: feedAlternate },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: '/img/ad-ventures-favicon-32x32.png',
     apple: '/img/ad-ventures-apple-touch-icon.png.png',
   },
   openGraph: {
     type: 'website',
-    title: 'Ad Ventures - Digital Solutions',
+    siteName,
+    locale: 'en_US',
+    title: siteTitle,
+    description: siteDescription,
+    images: [{ url: '/img/og-image.jpg', alt: siteName }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteTitle,
+    description: siteDescription,
     images: ['/img/og-image.jpg'],
   },
   verification: {
@@ -27,6 +65,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <JsonLd data={organizationJsonLd()} />
         <Navbar />
         <main>{children}</main>
         <Footer />

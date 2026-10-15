@@ -2,12 +2,9 @@ import Link from 'next/link'
 import { getAllPosts, getPage, formatDate } from '../lib/content'
 import FeatureGrid from '../components/FeatureGrid'
 import StoryGrid from '../components/StoryGrid'
+import { pageMetadata } from '../lib/site'
 
-export const metadata = {
-  title: 'Building Fast, Elegant & Secure Digital Solutions',
-  description:
-    'We deliver and support web-based solutions with stunning designs and secure infrastructure.',
-}
+export const metadata = pageMetadata({ path: '/' })
 
 export default function HomePage() {
   const { frontmatter } = getPage('home')

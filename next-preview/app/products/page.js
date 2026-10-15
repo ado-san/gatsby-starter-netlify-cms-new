@@ -1,9 +1,13 @@
 import { getPage } from '../../lib/content'
 import FeatureGrid from '../../components/FeatureGrid'
+import { pageMetadata } from '../../lib/site'
 
-export const metadata = {
-  title: 'AD Ventures Products & Services',
-}
+export const metadata = pageMetadata({
+  title: 'Products & services: Next.js websites, AI integration, sovereign cloud',
+  description:
+    'Fast and secure Next.js and React websites, AI integration with Claude, ChatGPT, Mistral AI or Gemini, Nextcloud and sovereign cloud hosting, and open source consulting for ventures.',
+  path: '/products/',
+})
 
 export default function ProductsPage() {
   const { frontmatter } = getPage('products')

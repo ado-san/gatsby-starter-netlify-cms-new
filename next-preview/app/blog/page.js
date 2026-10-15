@@ -1,10 +1,13 @@
 import StoryGrid from '../../components/StoryGrid'
 import { getAllPosts } from '../../lib/content'
+import { pageMetadata } from '../../lib/site'
 
-export const metadata = {
-  title: 'Blog',
-  description: 'Latest stories from AD Ventures.',
-}
+export const metadata = pageMetadata({
+  title: 'Blog: open source, AI, sovereign cloud and web technology',
+  description:
+    'Articles about open source and free software, venture capital, Next.js and React, AI assistants (Claude, ChatGPT, Mistral AI, Gemini), Nextcloud, sovereign cloud and the CLOUD Act.',
+  path: '/blog/',
+})
 
 export default function BlogPage() {
   const posts = getAllPosts()

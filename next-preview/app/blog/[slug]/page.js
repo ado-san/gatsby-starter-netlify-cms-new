@@ -1,11 +1,30 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { formatDate, getAllPosts, getPostBySlug, slugify } from '../../../lib/content'
+import JsonLd from '../../../components/JsonLd'
+import {
+  formatDate,
+  getAllPosts,
+  getPostBySlug,
+  readingTime,
+  slugify,
+} from '../../../lib/content'
+import {
+  absoluteUrl,
+  author,
+  breadcrumbJsonLd,
+  pageMetadata,
+  siteName,
+  siteUrl,
+} from '../../../lib/site'
 
 export const dynamicParams = false
 
 export function generateStaticParams() {
   return getAllPosts().map(post => ({ slug: post.slug }))
+}
+
+function toIso(value) {
+  return value ? new Date(value).toISOString() : undefined
 }
 
 export async function generateMetadata({ params }) {
@@ -14,18 +33,24 @@ export async function generateMetadata({ params }) {
 
   if (!post) return { title: 'Article not found' }
 
+  const { frontmatter } = post
+
   return {
-    title: post.frontmatter.title,
-    description: post.frontmatter.description,
-    openGraph: {
+    ...pageMetadata({
+      title: frontmatter.title,
+      description: frontmatter.description,
+      path: `/blog/${post.slug}/`,
+      image: frontmatter.featuredimage,
       type: 'article',
-      title: post.frontmatter.title,
-      description: post.frontmatter.description,
-      publishedTime: new Date(post.frontmatter.date).toISOString(),
-      images: post.frontmatter.featuredimage
-        ? [post.frontmatter.featuredimage]
-        : undefined,
-    },
+      keywords: frontmatter.tags,
+      openGraph: {
+        publishedTime: toIso(frontmatter.date),
+        modifiedTime: toIso(frontmatter.updated || frontmatter.date),
+        authors: [author.url],
+        tags: frontmatter.tags,
+      },
+    }),
+    authors: [author],
   }
 }
 
@@ -36,16 +61,52 @@ export default async function BlogPostPage({ params }) {
   if (!post) notFound()
 
   const { frontmatter } = post
+  const path = `/blog/${post.slug}/`
+  const minutes = readingTime(post.body)
+
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    '@id': `${absoluteUrl(path)}#article`,
+    mainEntityOfPage: absoluteUrl(path),
+    headline: frontmatter.title,
+    description: frontmatter.description,
+    image: frontmatter.featuredimage ? absoluteUrl(frontmatter.featuredimage) : undefined,
+    datePublished: toIso(frontmatter.date),
+    dateModified: toIso(frontmatter.updated || frontmatter.date),
+    author: { '@type': 'Person', name: author.name, url: author.url },
+    publisher: { '@id': `${siteUrl}/#organization` },
+    keywords: frontmatter.tags?.join(', '),
+    wordCount: post.body.split(/\s+/).length,
+    inLanguage: 'en',
+  }
 
   return (
     <article>
+      <JsonLd data={articleJsonLd} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: siteName, path: '/' },
+          { name: 'Blog', path: '/blog/' },
+          { name: frontmatter.title, path },
+        ])}
+      />
       <header className="page-heading">
         <div className="page-heading__inner">
-          <p className="section-kicker">AD Ventures / Blog</p>
+          <nav className="section-kicker" aria-label="Breadcrumb">
+            <Link href="/">AD Ventures</Link> / <Link href="/blog/">Blog</Link>
+          </nav>
           <h1>{frontmatter.title}</h1>
-          <time className="story-card__date" dateTime={new Date(frontmatter.date).toISOString()}>
-            {formatDate(frontmatter.date)}
-          </time>
+          <p className="story-card__date">
+            <time dateTime={toIso(frontmatter.date)}>{formatDate(frontmatter.date)}</time>
+            {frontmatter.updated ? (
+              <>
+                {' · Updated '}
+                <time dateTime={toIso(frontmatter.updated)}>{formatDate(frontmatter.updated)}</time>
+              </>
+            ) : null}
+            {` · ${minutes} min read · by ${author.name}`}
+          </p>
           {frontmatter.description ? (
             <p className="lead-copy mt-4">{frontmatter.description}</p>
           ) : null}

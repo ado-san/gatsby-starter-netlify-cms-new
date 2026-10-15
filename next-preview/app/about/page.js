@@ -1,8 +1,12 @@
 import { getPage } from '../../lib/content'
+import { pageMetadata } from '../../lib/site'
 
-export const metadata = {
-  title: 'About our values',
-}
+export const metadata = pageMetadata({
+  title: 'About AD Ventures: open source, ventures and web technology',
+  description:
+    'AD Ventures is a web and technology consultancy founded in 2012, committed to free software, digital sovereignty and responsible AI.',
+  path: '/about/',
+})
 
 export default function AboutPage() {
   const page = getPage('about')

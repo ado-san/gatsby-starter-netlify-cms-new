@@ -1,9 +1,12 @@
 import Link from 'next/link'
 import { getAllTags } from '../../lib/content'
+import { pageMetadata } from '../../lib/site'
 
-export const metadata = {
-  title: 'Tags',
-}
+export const metadata = pageMetadata({
+  title: 'Topics',
+  description: 'Browse AD Ventures articles by topic.',
+  path: '/tags/',
+})
 
 export default function TagsPage() {
   const tags = getAllTags()
