@@ -35,7 +35,10 @@ export const author = {
   url: `${siteUrl}/about/`,
 }
 
-export const sameAs = ['https://github.com/ado-san']
+export const sameAs = [
+  'https://github.com/ado-san',
+  'https://www.linkedin.com/in/adrien-lopez/',
+]
 
 export const feedAlternate = {
   'application/rss+xml': [{ url: '/feed.xml', title: `${siteName} blog` }],

@@ -5,9 +5,7 @@ import Link from 'next/link'
 
 const socialLinks = [
   { label: 'GitHub', href: 'https://github.com/ado-san', image: '/img/github-icon.svg' },
-  { label: 'Twitter', href: 'https://twitter.com', image: '/img/social/twitter.svg' },
-  { label: 'Instagram', href: 'https://instagram.com', image: '/img/social/instagram.svg' },
-  { label: 'Mastodon', href: 'https://mastodon.com', image: '/img/social/mastodon.svg' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/adrien-lopez/', image: '/img/social/linkedin.svg' },
 ]
 
 const navigation = [
