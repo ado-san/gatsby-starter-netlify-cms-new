@@ -16,7 +16,7 @@ function parseFile(filePath) {
   const parsed = matter(source)
 
   return {
-    slug: path.basename(filePath, '.md'),
+    slug: slugify(path.basename(filePath, '.md')),
     frontmatter: parsed.data,
     body: parsed.content,
     html: markdown.render(parsed.content),
@@ -72,12 +72,16 @@ export function getPostsByTag(tagSlug) {
 }
 
 export function slugify(value) {
-  return value
+  return String(value)
     .toLowerCase()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
+}
+
+export function readingTime(text) {
+  return Math.max(1, Math.round(text.split(/\s+/).length / 220))
 }
 
 export function formatDate(value) {

@@ -1,0 +1,17 @@
+# Legacy blog URLs (Unicode / starter slugs) → ASCII slugs
+/blog/2017-01-04-a-beginners-guide-to-brewing-with-chemex/  /blog/2017-01-04-labdoo-donate-your-old-computer-to-education/  301!
+/blog/2017-01-04-a-beginners-guide-to-brewing-with-chemex  /blog/2017-01-04-labdoo-donate-your-old-computer-to-education/  301!
+/blog/2016-12-17-making-sense-of-the-scaas-new-flavor-wheel/  /blog/2017-01-05-p5js-drawing-and-coding-made-easy/  301!
+/blog/2016-12-17-making-sense-of-the-scaas-new-flavor-wheel  /blog/2017-01-05-p5js-drawing-and-coding-made-easy/  301!
+/blog/2017-01-04-just-in-small-batch-of-jamaican-blue-mountain-in-store-next-week/  /blog/2018-08-10-kano-understand-how-a-computer-works/  301!
+/blog/2017-01-04-just-in-small-batch-of-jamaican-blue-mountain-in-store-next-week  /blog/2018-08-10-kano-understand-how-a-computer-works/  301!
+/blog/2019-09-19-learning-how-to-code-by-playing-with-codingame-%CF%86-%EF%B8%B6%E2%96%BD%EF%B8%B6-%CF%86/  /blog/2019-09-19-learning-how-to-code-by-playing-with-codingame/  301!
+/blog/2019-09-19-learning-how-to-code-by-playing-with-codingame-%CF%86-%EF%B8%B6%E2%96%BD%EF%B8%B6-%CF%86  /blog/2019-09-19-learning-how-to-code-by-playing-with-codingame/  301!
+/blog/2019-09-20-%C4%9F1-june-a-free-and-eco-friendly-crypto-money-%CC%B2%CC%85-%CC%B2%CC%85-%CC%B2%CC%851-%CC%B2%CC%85-%CC%B2%CC%85/  /blog/2019-09-20-g1-june-a-free-and-eco-friendly-crypto-money/  301!
+/blog/2019-09-20-%C4%9F1-june-a-free-and-eco-friendly-crypto-money-%CC%B2%CC%85-%CC%B2%CC%85-%CC%B2%CC%851-%CC%B2%CC%85-%CC%B2%CC%85  /blog/2019-09-20-g1-june-a-free-and-eco-friendly-crypto-money/  301!
+/blog/2019-09-20-g%CC%861-june-a-free-and-eco-friendly-crypto-money-%CC%B2%CC%85-%CC%B2%CC%85-%CC%B2%CC%851-%CC%B2%CC%85-%CC%B2%CC%85/  /blog/2019-09-20-g1-june-a-free-and-eco-friendly-crypto-money/  301!
+/blog/2019-09-20-g%CC%861-june-a-free-and-eco-friendly-crypto-money-%CC%B2%CC%85-%CC%B2%CC%85-%CC%B2%CC%851-%CC%B2%CC%85-%CC%B2%CC%85  /blog/2019-09-20-g1-june-a-free-and-eco-friendly-crypto-money/  301!
+/blog/2019-11-17-decentralized-social-media-platforms-this-is-what-we-need-%E2%80%A2%CC%80%E1%B4%97%E2%80%A2%CC%81-%D9%88/  /blog/2019-11-17-decentralized-social-media-platforms-this-is-what-we-need/  301!
+/blog/2019-11-17-decentralized-social-media-platforms-this-is-what-we-need-%E2%80%A2%CC%80%E1%B4%97%E2%80%A2%CC%81-%D9%88  /blog/2019-11-17-decentralized-social-media-platforms-this-is-what-we-need/  301!
+/blog/2019-12-19-writing-music-and-code-at-the-same-time-lilypond-%E2%99%AC%E2%99%AD%E2%99%AC/  /blog/2019-12-19-writing-music-and-code-at-the-same-time-lilypond/  301!
+/blog/2019-12-19-writing-music-and-code-at-the-same-time-lilypond-%E2%99%AC%E2%99%AD%E2%99%AC  /blog/2019-12-19-writing-music-and-code-at-the-same-time-lilypond/  301!
