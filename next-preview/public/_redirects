@@ -1,3 +1,12 @@
+# www → apex in a single hop (straight to the trailing-slash URL)
+https://www.ad-ventures.cc/  https://ad-ventures.cc/  301!
+https://www.ad-ventures.cc/about  https://ad-ventures.cc/about/  301!
+https://www.ad-ventures.cc/blog  https://ad-ventures.cc/blog/  301!
+https://www.ad-ventures.cc/contact  https://ad-ventures.cc/contact/  301!
+https://www.ad-ventures.cc/products  https://ad-ventures.cc/products/  301!
+https://www.ad-ventures.cc/tags  https://ad-ventures.cc/tags/  301!
+https://www.ad-ventures.cc/*  https://ad-ventures.cc/:splat  301!
+
 # Legacy blog URLs (Unicode / starter slugs) → ASCII slugs
 /blog/2017-01-04-a-beginners-guide-to-brewing-with-chemex/  /blog/2017-01-04-labdoo-donate-your-old-computer-to-education/  301!
 /blog/2017-01-04-a-beginners-guide-to-brewing-with-chemex  /blog/2017-01-04-labdoo-donate-your-old-computer-to-education/  301!
