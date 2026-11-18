@@ -113,14 +113,14 @@ export const games = [
     controls: 'Arrow keys or swipe — works on mobile.',
   },
   {
-    slug: 'sutomtom',
-    title: 'SuTomTom',
+    slug: 'wordquest',
+    title: 'WordQuest Entreprise',
     category: 'Letters',
-    logo: '/game-logos/sutomtom.svg',
+    logo: '/game-logos/wordquest.svg',
     color: '#22a45d',
-    tagline: 'Guess the word of the day in 6 tries.',
+    tagline: 'Guess the 6-letter tech & business word of the day in 6 tries.',
     summary:
-      'A word guessing game: find the hidden word in six attempts using the colour hints after each try.',
+      'A daily word guessing game with a tech and business vocabulary: find the hidden 6-letter word in six attempts using the colour hints after each try.',
     gameplay: [
       'Type a word and press Enter.',
       'Green: the letter is in the right place. Yellow: the letter is in the word but elsewhere. Grey: not in the word.',
@@ -133,10 +133,10 @@ export const games = [
       'Colours, logo and share message.',
     ],
     useCases: ['Daily engagement on intranet or website', 'Learning a technical vocabulary', 'Language training', 'Marketing campaigns'],
-    tech: 'React + TypeScript (fork of an any-language Wordle clone)',
+    tech: 'React + TypeScript (based on an open source, any-language Wordle clone)',
     license: 'MIT',
-    repo: 'https://github.com/ado-san/sutomtom',
-    play: '/play/sutomtom/',
+    repo: 'https://github.com/ado-san/WordQuestEntreprise',
+    play: '/play/wordquest/',
     controls: 'Keyboard or on-screen keyboard — works on mobile.',
   },
 ]

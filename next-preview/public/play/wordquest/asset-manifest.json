@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/play/wordquest/static/css/main.4b50ec06.css",
+    "main.js": "/play/wordquest/static/js/main.1c7e5679.js",
+    "static/js/27.76c338df.chunk.js": "/play/wordquest/static/js/27.76c338df.chunk.js",
+    "static/media/BCSans-Bold.woff": "/play/wordquest/static/media/BCSans-Bold.252ecf87ea37c93b293c.woff",
+    "static/media/BCSans-BoldItalic.woff": "/play/wordquest/static/media/BCSans-BoldItalic.73ed5137b2c4a42b754f.woff",
+    "static/media/BCSans-Italic.woff": "/play/wordquest/static/media/BCSans-Italic.9c3be03a06d30a6ecff0.woff",
+    "static/media/BCSans-Regular.woff": "/play/wordquest/static/media/BCSans-Regular.0079ea8e42d4e81a13d2.woff",
+    "index.html": "/play/wordquest/index.html",
+    "static/media/getFetch.cjs": "/play/wordquest/static/media/getFetch.c780682470504fffbd04.cjs"
+  },
+  "entrypoints": [
+    "static/css/main.4b50ec06.css",
+    "static/js/main.1c7e5679.js"
+  ]
+}
