@@ -59,8 +59,5 @@ To add a game: build it with base path `/play/<slug>/` (or relative `./`), copy 
 
 - Netlify: switch `elaborate-tulumba-d50ffa` production branch from `feature/nextjs-migration` to `master`,
   then retire or stop builds on `brave-liskov-d20cf2`.
-- Next.js 16.4.0 has security advisories; `npm audit` suggests 16.4.6 (static export, so server-side issues
-  don't apply directly, but upgrading is recommended — separate PR).
-- `markdown-it` 15.0.2 has advisories (fix: 15.0.3).
 - Games bundles add ~13 MB to the repo (RPG-JS 6.5 MB, Monogatari 3.5 MB).
 - Ideas: brand the Monogatari main menu, add more WordQuest words (147 words ≈ 5 months from 2026-11-18).
