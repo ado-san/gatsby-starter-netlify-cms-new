@@ -141,6 +141,11 @@ export const games = [
   },
 ]
 
+// Most recently added games first (the catalogue is kept in the order games were added).
+export function getLatestGames(count = 3) {
+  return [...games].reverse().slice(0, count)
+}
+
 export function getGame(slug) {
   return games.find(game => game.slug === slug)
 }

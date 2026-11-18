@@ -615,3 +615,223 @@ article .mt-6 .section-title {
     width: 6rem;
   }
 }
+
+/* Tables in articles */
+.prose table {
+  border-collapse: collapse;
+  display: block;
+  font-size: 0.95rem;
+  margin: 1.5rem 0;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--line);
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  background: var(--wash);
+  color: var(--ink);
+}
+
+/* Logo cards: technologies (products) and licences (about) */
+.logo-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.logo-card {
+  align-items: start;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  padding: 1.25rem;
+}
+
+.logo-card__logo {
+  height: 3rem;
+  object-fit: contain;
+  width: 3rem;
+}
+
+.logo-card__category {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.logo-card__title {
+  color: var(--ink);
+  font-size: 1.15rem;
+  font-weight: 750;
+  margin: 0.1rem 0 0.35rem;
+}
+
+.logo-card__title a {
+  color: inherit;
+}
+
+.logo-card__title a:hover {
+  color: var(--brand-dark);
+}
+
+.logo-card__text {
+  font-size: 0.93rem;
+  margin: 0;
+}
+
+.logo-grid--licence {
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.logo-grid--licence .logo-card {
+  background: var(--wash);
+  border-color: transparent;
+}
+
+.logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.logo-strip li {
+  align-items: center;
+  background: var(--wash);
+  border-radius: 999px;
+  color: var(--ink);
+  display: flex;
+  font-weight: 700;
+  gap: 0.55rem;
+  padding: 0.45rem 1rem 0.45rem 0.55rem;
+}
+
+.logo-strip img {
+  background: #fff;
+  border-radius: 50%;
+  height: 2.25rem;
+  padding: 0.35rem;
+  width: 2.25rem;
+}
+
+/* About page sections */
+.about-sections {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-section {
+  border-top: 1px solid var(--line);
+  padding: 2.25rem 0 1rem;
+}
+
+.about-section:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.about-section .prose {
+  max-width: 50rem;
+}
+
+.about-section__title {
+  align-items: baseline;
+  color: var(--ink);
+  display: flex;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  gap: 1rem;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.about-section__number {
+  color: var(--brand);
+  flex: none;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  position: relative;
+  top: -0.2em;
+}
+
+.about-section__number::after {
+  background: var(--brand);
+  content: "";
+  display: inline-block;
+  height: 2px;
+  margin-left: 0.6rem;
+  vertical-align: middle;
+  width: 1.75rem;
+}
+
+/* Contact page */
+.contact-layout {
+  align-items: start;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: minmax(0, 42rem) minmax(16rem, 22rem);
+}
+
+.chat-card {
+  background: var(--wash);
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+.chat-card__title {
+  color: var(--ink);
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.whatsapp-button.button {
+  background: #25d366;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.whatsapp-button.button:hover,
+.whatsapp-button.button:focus-visible {
+  background: #1da851;
+  color: #fff;
+}
+
+.chat-card__number {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-grid {
+    grid-template-columns: 1fr;
+  }
+}

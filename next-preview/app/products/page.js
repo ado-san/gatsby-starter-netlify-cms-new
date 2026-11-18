@@ -1,5 +1,7 @@
 import { getPage } from '../../lib/content'
 import FeatureGrid from '../../components/FeatureGrid'
+import LogoGrid from '../../components/LogoGrid'
+import { technologies } from '../../lib/tech'
 import { pageMetadata } from '../../lib/site'
 
 export const metadata = pageMetadata({
@@ -24,6 +26,17 @@ export default function ProductsPage() {
         <div className="content-width">
           <p className="lead-copy">{frontmatter.description}</p>
           <FeatureGrid items={frontmatter.intro.blurbs} />
+        </div>
+      </section>
+      <section className="section-band section-band--wash">
+        <div className="content-width">
+          <p className="section-kicker">Our toolbox</p>
+          <h2 className="section-title">Technologies we use</h2>
+          <p className="lead-copy">
+            Proven tools, open source whenever possible, chosen for speed, security and independence. We use
+            them every day on our own projects before recommending them to you.
+          </p>
+          <LogoGrid items={technologies} />
         </div>
       </section>
     </>

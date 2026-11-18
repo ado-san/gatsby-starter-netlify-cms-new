@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import GameCard from '../../components/GameCard'
 import JsonLd from '../../components/JsonLd'
 import { games } from '../../lib/games'
 import { breadcrumbJsonLd, pageMetadata, siteName } from '../../lib/site'
@@ -35,26 +36,7 @@ export default function GamesPage() {
           </p>
           <div className="game-grid">
             {games.map(game => (
-              <Link className="game-card" href={`/games/${game.slug}/`} key={game.slug}>
-                <div className="game-card__head">
-                  <img className="game-logo" src={game.logo} alt="" width="72" height="72" />
-                  <div>
-                    <span className="game-tag" style={{ '--tag': game.color }}>
-                      {game.category}
-                    </span>
-                    <h2 className="game-card__title">{game.title}</h2>
-                  </div>
-                </div>
-                <p className="game-card__text">
-                  <strong>Gameplay: </strong>
-                  {game.tagline}
-                </p>
-                <p className="game-card__text">
-                  <strong>Customizable for your company: </strong>
-                  {game.customizable[0]}
-                </p>
-                <span className="game-card__more">More info &amp; play →</span>
-              </Link>
+              <GameCard game={game} key={game.slug} />
             ))}
           </div>
         </div>
