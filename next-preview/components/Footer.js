@@ -18,6 +18,7 @@ export default function Footer() {
           <Link href="/blog/">Blog</Link>
           <Link href="/about/">About</Link>
           <Link href="/products/">Products</Link>
+          <Link href="/games/">Games</Link>
           <Link href="/contact/">Contact</Link>
         </nav>
         <div className="footer-socials" aria-label="Social media">
