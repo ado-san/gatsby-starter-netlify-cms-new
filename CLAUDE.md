@@ -5,11 +5,12 @@ Talk to the owner in French; site content is in English.
 
 ## Working environment
 
-- Work happens in **GitHub Codespaces** only (devcontainer: Node 22 + Claude Code). Never assume a local machine.
-- `gh` is authenticated as `ado-san` inside the Codespace. The Codespace `GITHUB_TOKEN` may only have rights on
-  this repository: to create or push to another repo, run `unset GITHUB_TOKEN && gh auth login` first.
-- `master` = production, deployed by Netlify to https://ad-ventures.cc. Work on a branch and open a PR
-  (Netlify builds a deploy preview for each PR).
+- Work happens **locally** on Windows (Claude Code desktop), in `C:\Users\Komal\Documents\ad-ventures\`
+  (this repo + `WordQuestEntreprise`). Node 22+, `gh` authenticated as `ado-san`.
+  A Codespace (devcontainer: Node 22 + Claude Code) still works as a fallback.
+- `master` = production. Work on a branch and open a PR.
+- Netlify: production site is `elaborate-tulumba-d50ffa` (owns ad-ventures.cc), production branch must be `master`.
+  The old site `brave-liskov-d20cf2` (former Netlify account) also builds this repo and posts the PR deploy previews.
 
 ## Stack
 
@@ -25,7 +26,7 @@ npm run dev     # http://localhost:3001
 npm run build   # static export in out/
 ```
 
-## Games section (branch `feature/games`)
+## Games section (merged in PR #5)
 
 Pages:
 - `/games/` — `next-preview/app/games/page.js`: one card per game (logo, category, gameplay, customization).
@@ -56,7 +57,8 @@ To add a game: build it with base path `/play/<slug>/` (or relative `./`), copy 
 
 ## Open items
 
-- Push `feature/games` and open the PR to `master` (prepared outside the Codespace, delivered as a git bundle).
+- Netlify: switch `elaborate-tulumba-d50ffa` production branch from `feature/nextjs-migration` to `master`,
+  then retire or stop builds on `brave-liskov-d20cf2`.
 - Next.js 16.4.0 has security advisories; `npm audit` suggests 16.4.6 (static export, so server-side issues
   don't apply directly, but upgrading is recommended — separate PR).
 - `markdown-it` 15.0.2 has advisories (fix: 15.0.3).
