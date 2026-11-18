@@ -1,5 +1,7 @@
 # www → apex in a single hop (straight to the trailing-slash URL)
 # Legacy blog URLs (Unicode / starter slugs) → ASCII slugs
+/blog/2026-11-18-test-new-article-auto-hosting-ai-agents-ollama/*  /blog/2026-11-18-self-hosting-ai-agents-coding-tools-ollama-hardware/  301!
+/blog/2026-11-18-test-new-article-auto-hosting-ai-agents-ollama  /blog/2026-11-18-self-hosting-ai-agents-coding-tools-ollama-hardware/  301!
 /blog/2017-01-04-a-beginners-guide-to-brewing-with-chemex/  /blog/2017-01-04-labdoo-donate-your-old-computer-to-education/  301!
 /blog/2017-01-04-a-beginners-guide-to-brewing-with-chemex  /blog/2017-01-04-labdoo-donate-your-old-computer-to-education/  301!
 /blog/2016-12-17-making-sense-of-the-scaas-new-flavor-wheel/  /blog/2017-01-05-p5js-drawing-and-coding-made-easy/  301!
