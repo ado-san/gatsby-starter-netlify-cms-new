@@ -11,6 +11,7 @@ const socialLinks = [
 const navigation = [
   { label: 'Home', href: '/' },
   { label: 'Products', href: '/products/' },
+  { label: 'Games', href: '/games/' },
   { label: 'Blog', href: '/blog/' },
   { label: 'About', href: '/about/' },
   { label: 'Contact', href: '/contact/' },

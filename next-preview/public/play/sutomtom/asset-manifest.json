@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/play/sutomtom/static/css/main.06297267.css",
+    "main.js": "/play/sutomtom/static/js/main.214db0af.js",
+    "static/js/27.bcef1588.chunk.js": "/play/sutomtom/static/js/27.bcef1588.chunk.js",
+    "static/media/BCSans-Bold.woff": "/play/sutomtom/static/media/BCSans-Bold.252ecf87ea37c93b293c.woff",
+    "static/media/BCSans-BoldItalic.woff": "/play/sutomtom/static/media/BCSans-BoldItalic.73ed5137b2c4a42b754f.woff",
+    "static/media/BCSans-Italic.woff": "/play/sutomtom/static/media/BCSans-Italic.9c3be03a06d30a6ecff0.woff",
+    "static/media/BCSans-Regular.woff": "/play/sutomtom/static/media/BCSans-Regular.0079ea8e42d4e81a13d2.woff",
+    "index.html": "/play/sutomtom/index.html",
+    "static/media/getFetch.cjs": "/play/sutomtom/static/media/getFetch.c780682470504fffbd04.cjs"
+  },
+  "entrypoints": [
+    "static/css/main.06297267.css",
+    "static/js/main.214db0af.js"
+  ]
+}
