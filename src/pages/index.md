@@ -12,10 +12,10 @@ description: >-
   We start from your story and your users, choose the most suitable open technologies, and deliver fast, secure and accessible solutions. We host them on European, sovereign infrastructure when your data needs it, and we are glad to pass our knowledge on to your team.
 intro:
   blurbs:
-    - image: /img/press-start.jpg
+    - image: /img/web-tech.png
       text: >
         Web technology: fast, secure and SEO-friendly websites and web apps built with Next.js and React, static export on a CDN, headless CMS and accessible design.
-    - image: /img/products-grid2.jpg
+    - image: /img/mobile-apps.png
       text: >
         Mobile & web apps: iOS and Android apps, native or cross-platform with React Native and Expo, progressive web apps and hybrid apps with Capacitor, from prototype to App Store and Google Play.
     - image: /img/bubble.jpg
@@ -27,7 +27,7 @@ intro:
     - image: /img/clock-2.jpg
       text: >
         Open source & ventures: technology strategy, free software business models and due diligence support for founders and investors building on open source.
-    - image: /game-logos/rpg.svg
+    - image: /img/branded-games.png
       text: >
         Branded games: memory, adventure, RPG, puzzle and word games customized with your brand and content for events, onboarding, training and marketing.
   heading: What we offer

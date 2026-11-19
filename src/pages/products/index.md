@@ -11,12 +11,12 @@ description: >-
   Europe, and advises founders and investors on open source ventures.
 intro:
   blurbs:
-    - image: /img/press-start.jpg
+    - image: /img/web-tech.png
       text: >-
         Next.js & React websites: responsive, accessible and SEO-optimised
         sites and web apps, statically generated and served from a CDN, with a
         headless CMS your team can use.
-    - image: /img/products-grid2.jpg
+    - image: /img/mobile-apps.png
       text: >-
         Mobile & web apps: native iOS (Swift) and Android (Kotlin) apps,
         cross-platform apps with React Native and Expo, progressive web apps and
@@ -36,7 +36,7 @@ intro:
         Open source consulting for ventures: technology strategy, licence and
         business model choices, technical due diligence, and SEO / AI search
         visibility (sitemaps, structured data, llms.txt).
-    - image: /game-logos/rpg.svg
+    - image: /img/branded-games.png
       text: >-
         Branded games: open source browser games customized with your logo,
         products and content for events, onboarding and marketing. Try them on
