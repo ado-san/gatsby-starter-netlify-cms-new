@@ -2,12 +2,13 @@ import Link from 'next/link'
 import { getPage } from '../../lib/content'
 import { pageMetadata } from '../../lib/site'
 import LogoGrid from '../../components/LogoGrid'
+import LogoStrip from '../../components/LogoStrip'
 import { licences, technologies } from '../../lib/tech'
 
 export const metadata = pageMetadata({
-  title: 'About AD Ventures: open source, ventures and web technology',
+  title: 'About Ad Ventures Limited: open source, ventures and web technology',
   description:
-    'AD Ventures is a web and technology consultancy founded in 2012, committed to free software, digital sovereignty and responsible AI.',
+    'Ad Ventures Limited is a web and technology consultancy founded in 2012, committed to free software, digital sovereignty and responsible AI.',
   path: '/about/',
 })
 
@@ -28,18 +29,7 @@ function splitSections(html) {
 function sectionVisual(title = '') {
   const key = title.toLowerCase()
   if (key.includes('our values')) return <LogoGrid items={licences} variant="licence" />
-  if (key.startsWith('technology')) {
-    return (
-      <ul className="logo-strip" aria-label="Technologies we use">
-        {technologies.map(tech => (
-          <li key={tech.name}>
-            <img src={tech.logo} alt="" width="36" height="36" loading="lazy" />
-            <span>{tech.name}</span>
-          </li>
-        ))}
-      </ul>
-    )
-  }
+  if (key.startsWith('technology')) return <LogoStrip items={technologies} label="Technologies we use" />
   return null
 }
 

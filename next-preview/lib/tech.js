@@ -53,6 +53,37 @@ export const technologies = [
   },
 ]
 
+export const appServices = [
+  {
+    name: 'iOS apps',
+    logo: '/img/tech/apple.svg',
+    category: 'iPhone & iPad',
+    text: 'Native apps in Swift and SwiftUI, or cross-platform with React Native. We handle design, development, TestFlight beta testing and App Store publication.',
+  },
+  {
+    name: 'Android apps',
+    logo: '/img/tech/android.svg',
+    category: 'Phones & tablets',
+    text: 'Native apps in Kotlin and Jetpack Compose, or from the same cross-platform code base as your iOS app. Published on Google Play, or distributed privately to your team.',
+  },
+  {
+    name: 'Web apps & hybrid apps',
+    logo: '/img/tech/pwa.svg',
+    category: 'One code base, every screen',
+    text: 'Progressive web apps (PWA) that install from the browser and work offline, and hybrid apps with Capacitor or React Native and Expo: one code base for web, iOS and Android, faster and cheaper to build and maintain.',
+  },
+]
+
+export const appStack = [
+  { name: 'React Native', logo: '/img/tech/react.svg' },
+  { name: 'Expo', logo: '/img/tech/expo.svg' },
+  { name: 'Capacitor', logo: '/img/tech/capacitor.svg' },
+  { name: 'Flutter', logo: '/img/tech/flutter.svg' },
+  { name: 'Swift', logo: '/img/tech/swift.svg' },
+  { name: 'Kotlin', logo: '/img/tech/kotlin.svg' },
+  { name: 'PWA', logo: '/img/tech/pwa.svg' },
+]
+
 export const licences = [
   {
     name: 'Copyright',
