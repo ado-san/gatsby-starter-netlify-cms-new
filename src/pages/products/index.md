@@ -36,7 +36,7 @@ intro:
         Open source consulting for ventures: technology strategy, licence and
         business model choices, technical due diligence, and SEO / AI search
         visibility (sitemaps, structured data, llms.txt).
-    - image: /game-logos/rpg.svg
+    - image: /img/branded-games.png
       text: >-
         Branded games: open source browser games customized with your logo,
         products and content for events, onboarding and marketing. Try them on

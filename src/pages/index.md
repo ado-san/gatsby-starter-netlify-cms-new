@@ -27,7 +27,7 @@ intro:
     - image: /img/clock-2.jpg
       text: >
         Open source & ventures: technology strategy, free software business models and due diligence support for founders and investors building on open source.
-    - image: /game-logos/rpg.svg
+    - image: /img/branded-games.png
       text: >
         Branded games: memory, adventure, RPG, puzzle and word games customized with your brand and content for events, onboarding, training and marketing.
   heading: What we offer
