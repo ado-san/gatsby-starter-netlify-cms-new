@@ -237,3 +237,190 @@ input[type=range]::-ms-fill-upper {
 @media screen and (min-width: 500em) {
 
 }
+
+/**
+ * ===========================
+ * AD Ventures — readable, touch-friendly layout (phones portrait + landscape)
+ * ===========================
+**/
+
+/* Main menu: centered, large buttons with a title */
+[data-screen="main"] {
+	background: linear-gradient(160deg, #eaf2ff 0%, #ffffff 60%, #e9f9f2 100%);
+}
+
+[data-screen="main"]::before {
+	content: "Onboarding Story";
+	position: absolute;
+	top: 18%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: clamp(1.8rem, 7vw, 3rem);
+	font-weight: 700;
+	color: #1f2a44;
+	padding: 0 1rem;
+}
+
+[data-component="main-menu"] {
+	position: absolute;
+	inset: auto 0 10% 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+[data-screen="main"] button {
+	width: min(80vw, 18rem);
+	min-height: 48px;
+	margin: 0;
+	font-size: 1.1rem;
+	border-radius: 10px;
+	background: #3273dc;
+	color: #fff;
+	border: none;
+}
+
+[data-screen="main"] button[data-action="start"] {
+	background: #00a37a;
+	font-weight: 700;
+}
+
+/* Text box: solid, readable, never covers the whole screen */
+[data-component="text-box"] {
+	background: rgba(20, 26, 42, 0.92);
+	max-height: 40%;
+}
+
+[data-component="text-box"] [data-content="text"],
+[data-ui="say"] {
+	font-size: 1.1rem;
+	line-height: 1.5;
+}
+
+[data-ui="who"] {
+	display: inline-block;
+	flex: 0 0 auto;
+	width: auto;
+	margin: 0.6rem 0 0 1rem;
+	padding: 0.15rem 0.7rem;
+	border-radius: 999px;
+	background: #fff;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+[data-ui="who"]:empty {
+	display: none;
+}
+
+/* Choices: full-width, large touch targets */
+[data-component="choice-container"] [data-content="wrapper"] {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.7rem;
+	width: 100%;
+}
+
+[data-component="choice-container"] button {
+	width: min(90vw, 26rem);
+	min-height: 52px;
+	margin: 0;
+	padding: 0.7rem 1rem;
+	font-size: 1.1rem;
+	line-height: 1.3;
+	border-radius: 10px;
+	background: #3273dc;
+	color: #fff;
+	border: none;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+	white-space: normal;
+}
+
+[data-component="choice-container"] button:hover,
+[data-component="choice-container"] button:focus {
+	background: #2160c4;
+}
+
+/* Name input and other dialogs */
+[data-component="text-input"] input,
+[data-component="text-input"] button,
+[data-component="message-modal"] button {
+	min-height: 44px;
+	font-size: 1.1rem;
+}
+
+[data-component="text-input"] button,
+[data-component="message-modal"] button {
+	min-width: 6rem;
+	border-radius: 8px;
+	background: #00a37a;
+	color: #fff;
+	border: none;
+}
+
+[data-component="text-input"] input {
+	font-size: 16px; /* avoids iOS zoom on focus */
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* Quick menu: bigger and higher-contrast icons */
+[data-component="quick-menu"] {
+	background: rgba(255, 255, 255, 0.85);
+	justify-content: space-evenly;
+}
+
+[data-component="quick-menu"] > button {
+	flex: 1 1 0;
+	min-width: 0;
+	max-width: 56px;
+	margin: 0;
+	padding: 0;
+	min-height: 44px;
+	font-size: 1.15rem;
+	color: #1f2a44;
+}
+
+/* Landscape phones: short screens */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+	[data-screen="main"]::before {
+		top: 8%;
+		font-size: 1.8rem;
+	}
+
+	[data-component="main-menu"] {
+		bottom: 6%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	[data-screen="main"] button {
+		width: auto;
+		min-width: 8rem;
+		min-height: 44px;
+	}
+
+	[data-component="text-box"] {
+		max-height: 45%;
+	}
+
+	[data-component="text-box"] [data-content="text"],
+	[data-ui="say"] {
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+
+	[data-component="choice-container"] [data-content="wrapper"] {
+		gap: 0.5rem;
+	}
+
+	[data-component="choice-container"] button {
+		min-height: 44px;
+		padding: 0.4rem 1rem;
+	}
+}
