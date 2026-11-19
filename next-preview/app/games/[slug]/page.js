@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
 
   return pageMetadata({
     title: `${game.title} — ${game.category} game customizable for your company`,
-    description: `${game.summary} Play it online and discover what AD Ventures can customize for your company.`,
+    description: `${game.summary} Play it online and discover what Ad Ventures Limited can customize for your company.`,
     path: `/games/${game.slug}/`,
   })
 }
@@ -58,7 +58,7 @@ export default async function GamePage({ params }) {
       <header className="page-heading">
         <div className="page-heading__inner">
           <nav className="section-kicker" aria-label="Breadcrumb">
-            <Link href="/">AD Ventures</Link> / <Link href="/games/">Games</Link>
+            <Link href="/">Ad Ventures Limited</Link> / <Link href="/games/">Games</Link>
           </nav>
           <h1>{game.title}</h1>
         </div>

@@ -105,4 +105,4 @@ The CLOUD Act is a reminder that infrastructure is never neutral. For Europe, a 
 - [openDesk](https://www.opendesk.eu/)
 - [Nextcloud](https://nextcloud.com/)
 
-Need help to design a sovereign, open source infrastructure? [Contact AD Ventures](/contact/).
+Need help to design a sovereign, open source infrastructure? [Contact Ad Ventures Limited](/contact/).

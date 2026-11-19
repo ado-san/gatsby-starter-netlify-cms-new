@@ -124,4 +124,4 @@ For most teams, the best result comes from combining both worlds:
 
 ## Need help?
 
-AD Ventures can help you choose the hardware, install and secure the stack (Ollama, Open WebUI, coding assistants, MCP connectors), connect it to your **Nextcloud** and your documents, and train your team. [Tell us about your project](/contact/).
+Ad Ventures Limited can help you choose the hardware, install and secure the stack (Ollama, Open WebUI, coding assistants, MCP connectors), connect it to your **Nextcloud** and your documents, and train your team. [Tell us about your project](/contact/).

@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
 
   return pageMetadata({
     title: `${tag.label}: articles and guides`,
-    description: `AD Ventures articles about ${tag.label}.`,
+    description: `Ad Ventures Limited articles about ${tag.label}.`,
     path: `/tags/${tag.slug}/`,
   })
 }

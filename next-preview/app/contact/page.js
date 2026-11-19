@@ -2,13 +2,13 @@ import ContactForm from '../../components/ContactForm'
 import { pageMetadata } from '../../lib/site'
 
 const whatsappUrl = `https://wa.me/85261009858?text=${encodeURIComponent(
-  'Hello AD Ventures, I would like to talk about a project.'
+  'Hello Ad Ventures Limited, I would like to talk about a project.'
 )}`
 
 export const metadata = pageMetadata({
   title: 'Contact',
   description:
-    'Contact AD Ventures about a website, an app, a game, an AI project, a Nextcloud or sovereign cloud migration, or an open source venture. Write to us or chat on WhatsApp.',
+    'Contact Ad Ventures Limited about a website, an app, a game, an AI project, a Nextcloud or sovereign cloud migration, or an open source venture. Write to us or chat on WhatsApp.',
   path: '/contact/',
 })
 

@@ -48,7 +48,7 @@ Gatsby was a pioneer, but the ecosystem moved on: after Netlify acquired Gatsby 
 
 ## 2026: Next.js, React Server Components and static export
 
-The current version of AD Ventures runs on [**Next.js**](https://nextjs.org/) with the **App Router** and **React Server Components**:
+The current version of Ad Ventures Limited runs on [**Next.js**](https://nextjs.org/) with the **App Router** and **React Server Components**:
 
 - **Server Components** read the Markdown files directly at build time with Node.js: no GraphQL layer, no client-side data fetching, less JavaScript sent to the browser.
 - **Static export** (`output: 'export'`) generates plain HTML files for every page, article and tag, deployed on Netlify's CDN.

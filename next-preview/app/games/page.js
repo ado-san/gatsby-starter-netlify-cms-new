@@ -7,7 +7,7 @@ import { breadcrumbJsonLd, pageMetadata, siteName } from '../../lib/site'
 export const metadata = pageMetadata({
   title: 'Games for companies: memory, adventure, puzzle and word games',
   description:
-    'Play open source browser games that AD Ventures can brand and customize for your company: memory, visual novel, RPG, 2048 and word guessing games for events, onboarding and marketing.',
+    'Play open source browser games that Ad Ventures Limited can brand and customize for your company: memory, visual novel, RPG, 2048 and word guessing games for events, onboarding and marketing.',
   path: '/games/',
   keywords: ['gamification', 'serious games', 'branded games', 'onboarding game', 'memory game', 'visual novel', 'RPG', '2048', 'word game'],
 })
@@ -23,7 +23,7 @@ export default function GamesPage() {
       />
       <header className="page-heading">
         <div className="page-heading__inner">
-          <p className="section-kicker">AD Ventures</p>
+          <p className="section-kicker">Ad Ventures Limited</p>
           <h1>Games for your company</h1>
         </div>
       </header>
@@ -31,7 +31,7 @@ export default function GamesPage() {
         <div className="content-width">
           <p className="lead-copy">
             Play these open source browser games, then imagine them with your logo, your products and your
-            content. AD Ventures customizes and hosts them for events, onboarding, training and marketing
+            content. Ad Ventures Limited customizes and hosts them for events, onboarding, training and marketing
             campaigns.
           </p>
           <div className="game-grid">

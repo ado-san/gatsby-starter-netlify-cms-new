@@ -10,8 +10,8 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <Link href="/" aria-label="AD Ventures home">
-            <img className="footer-logo" src="/img/ad-ventures-logo-short.png" alt="AD Ventures" />
+          <Link href="/" aria-label="Ad Ventures Limited home">
+            <img className="footer-logo" src="/img/ad-ventures-logo-short.png" alt="Ad Ventures Limited" />
           </Link>
         </div>
         <nav className="footer-links" aria-label="Footer navigation">
@@ -37,7 +37,13 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <p className="footer-bottom">AD Ventures</p>
+      <div className="footer-bottom">
+        <p>© 2012–{new Date().getFullYear()} Ad Ventures Limited. All rights reserved.</p>
+        <nav className="footer-legal" aria-label="Legal">
+          <Link href="/terms/">Terms of use</Link>
+          <Link href="/privacy/">Privacy policy</Link>
+        </nav>
+      </div>
     </footer>
   )
 }

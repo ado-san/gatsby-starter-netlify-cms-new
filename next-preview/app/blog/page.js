@@ -16,7 +16,7 @@ export default function BlogPage() {
     <>
       <header className="page-heading">
         <div className="page-heading__inner">
-          <p className="section-kicker">AD Ventures</p>
+          <p className="section-kicker">Ad Ventures Limited</p>
           <h1>Blog</h1>
         </div>
       </header>
