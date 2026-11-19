@@ -55,7 +55,7 @@ export const games = [
     license: 'MIT',
     repo: 'https://github.com/Monogatari/Monogatari',
     play: '/play/story/',
-    controls: 'Mouse, touch or keyboard (Space / Enter to continue).',
+    controls: 'Tap or click to continue, tap a choice to answer; Space / Enter on a keyboard. Works on phones in portrait and landscape.',
   },
   {
     slug: 'rpg',
@@ -83,7 +83,7 @@ export const games = [
     license: 'MIT',
     repo: 'https://github.com/RSamaium/RPG-JS',
     play: '/play/rpg/',
-    controls: 'Keyboard: arrow keys to move, Space / Enter to interact, Escape for the menu. Best on desktop.',
+    controls: 'On phones and tablets: on-screen joystick to move, A to talk / confirm, B for the menu / back. On desktop: arrow keys, Space / Enter to interact, Escape for the menu.',
   },
   {
     slug: '2048',
