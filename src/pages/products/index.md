@@ -11,12 +11,12 @@ description: >-
   Europe, and advises founders and investors on open source ventures.
 intro:
   blurbs:
-    - image: /img/press-start.jpg
+    - image: /img/web-tech.png
       text: >-
         Next.js & React websites: responsive, accessible and SEO-optimised
         sites and web apps, statically generated and served from a CDN, with a
         headless CMS your team can use.
-    - image: /img/products-grid2.jpg
+    - image: /img/mobile-apps.png
       text: >-
         Mobile & web apps: native iOS (Swift) and Android (Kotlin) apps,
         cross-platform apps with React Native and Expo, progressive web apps and
