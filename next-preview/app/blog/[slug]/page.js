@@ -94,7 +94,7 @@ export default async function BlogPostPage({ params }) {
       <header className="page-heading">
         <div className="page-heading__inner">
           <nav className="section-kicker" aria-label="Breadcrumb">
-            <Link href="/">AD Ventures</Link> / <Link href="/blog/">Blog</Link>
+            <Link href="/">Ad Ventures Limited</Link> / <Link href="/blog/">Blog</Link>
           </nav>
           <h1>{frontmatter.title}</h1>
           <p className="story-card__date">

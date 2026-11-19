@@ -1,10 +1,10 @@
 ---
 templateKey: about-page
-title: About AD Ventures
+title: About Ad Ventures Limited
 ---
 ## A journey in design and technology
 
-AD Ventures began in 2012 as a web agency, crafting websites for small, medium and large businesses. Over the years we added a technology consulting layer to help our clients navigate a fast-moving environment: Jamstack and Next.js, cloud infrastructure, and now artificial intelligence.
+Ad Ventures Limited began in 2012 as a web agency, crafting websites for small, medium and large businesses. Over the years we added a technology consulting layer to help our clients navigate a fast-moving environment: Jamstack and Next.js, cloud infrastructure, and now artificial intelligence.
 
 ## Different clients, different needs
 

@@ -16,11 +16,11 @@ export function GET() {
 
 > ${siteDescription}
 
-AD Ventures (ad-ventures.cc) is a web and technology consultancy founded in 2012. It builds fast and secure websites with Next.js and React, integrates AI technologies (Anthropic Claude, OpenAI ChatGPT, Mistral AI, Google Gemini), deploys Nextcloud and sovereign cloud infrastructure in Europe, and supports ventures built on open source and free software.
+Ad Ventures Limited (ad-ventures.cc) is a web and technology consultancy founded in 2012. It builds fast and secure websites with Next.js and React, integrates AI technologies (Anthropic Claude, OpenAI ChatGPT, Mistral AI, Google Gemini), deploys Nextcloud and sovereign cloud infrastructure in Europe, and supports ventures built on open source and free software.
 
 ## Pages
 
-- [Home](${absoluteUrl('/')}): overview of AD Ventures
+- [Home](${absoluteUrl('/')}): overview of Ad Ventures Limited
 - [Products & services](${absoluteUrl('/products/')}): websites, AI integration, sovereign cloud, open source consulting
 - [About](${absoluteUrl('/about/')}): history and values (free software, digital sovereignty)
 - [Contact](${absoluteUrl('/contact/')}): contact form

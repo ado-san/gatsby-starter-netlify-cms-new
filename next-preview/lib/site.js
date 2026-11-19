@@ -1,11 +1,11 @@
 export const siteUrl = 'https://ad-ventures.cc'
 
-export const siteName = 'AD Ventures'
+export const siteName = 'Ad Ventures Limited'
 
-export const siteTitle = 'AD Ventures — Open source, ventures, web technology and AI'
+export const siteTitle = 'Ad Ventures Limited — Open source, ventures, web technology and AI'
 
 export const siteDescription =
-  'AD Ventures builds fast, secure web solutions with Next.js and React, and writes about open source, free software, venture capital, AI technologies (Anthropic Claude, OpenAI ChatGPT, Mistral AI, Gemini), Nextcloud, sovereign cloud and the CLOUD Act.'
+  'Ad Ventures Limited builds fast, secure web solutions with Next.js and React, and writes about open source, free software, venture capital, AI technologies (Anthropic Claude, OpenAI ChatGPT, Mistral AI, Gemini), Nextcloud, sovereign cloud and the CLOUD Act.'
 
 export const siteKeywords = [
   'open source',
@@ -14,6 +14,10 @@ export const siteKeywords = [
   'venture capital',
   'startups',
   'web technology',
+  'mobile apps',
+  'iOS',
+  'Android',
+  'progressive web apps',
   'Next.js',
   'React',
   'Jamstack',
@@ -56,6 +60,7 @@ export function organizationJsonLd() {
         '@type': 'Organization',
         '@id': `${siteUrl}/#organization`,
         name: siteName,
+        legalName: 'Ad Ventures Limited',
         url: `${siteUrl}/`,
         logo: absoluteUrl('/img/ad-ventures-logo.png'),
         description: siteDescription,

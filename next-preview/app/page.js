@@ -27,7 +27,7 @@ export default function HomePage() {
 
       <section className="section-band">
         <div className="content-width">
-          <p className="section-kicker">AD Ventures</p>
+          <p className="section-kicker">Ad Ventures Limited</p>
           <h2 className="section-title">{frontmatter.mainpitch.title}</h2>
           <p className="lead-copy">{frontmatter.mainpitch.description}</p>
           <div className="home-work-copy">

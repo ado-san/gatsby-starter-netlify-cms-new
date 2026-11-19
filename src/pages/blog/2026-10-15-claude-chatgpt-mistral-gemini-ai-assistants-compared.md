@@ -107,4 +107,4 @@ This site follows those principles, built with [React and Next.js](/blog/2019-11
 - [Model Context Protocol](https://modelcontextprotocol.io/)
 - [llms.txt proposal](https://llmstxt.org/)
 
-Want to integrate AI into your product or workflow? [Contact AD Ventures](/contact/).
+Want to integrate AI into your product or workflow? [Contact Ad Ventures Limited](/contact/).

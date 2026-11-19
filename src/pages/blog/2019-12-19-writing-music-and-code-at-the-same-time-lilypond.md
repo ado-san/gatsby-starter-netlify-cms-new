@@ -17,7 +17,7 @@ tags:
   - open source
   - GNU
 ---
-![LilyPond, writing music with code](/img/lilypond-image-intro.png "LilyPond on AD Ventures")
+![LilyPond, writing music with code](/img/lilypond-image-intro.png "LilyPond on Ad Ventures Limited")
 
 I actually learned how to read sheet music by writing code. When music scores looked like Chinese to me, writing something like `c c g g a a` felt very familiar, because I had learned guitar with tablatures found online. `c c g g a a` simply means "do do sol sol la la", and **LilyPond** generates a beautiful score from this simple code. Hurray!
 

@@ -4,7 +4,7 @@ import { pageMetadata } from '../../lib/site'
 
 export const metadata = pageMetadata({
   title: 'Topics',
-  description: 'Browse AD Ventures articles by topic.',
+  description: 'Browse Ad Ventures Limited articles by topic.',
   path: '/tags/',
 })
 

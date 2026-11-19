@@ -87,4 +87,4 @@ Read more in our guides on [sovereign cloud](/blog/2026-10-15-sovereign-cloud-cl
 - [Linux Foundation](https://www.linuxfoundation.org/)
 - [Choose a licence](https://choosealicense.com/)
 
-AD Ventures supports founders and companies building on open source and web technologies. [Let's talk](/contact/).
+Ad Ventures Limited supports founders and companies building on open source and web technologies. [Let's talk](/contact/).

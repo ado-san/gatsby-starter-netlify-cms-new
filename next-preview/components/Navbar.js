@@ -24,8 +24,8 @@ export default function Navbar() {
     <header className="site-header">
       <nav className="navbar is-transparent container" aria-label="Main navigation">
         <div className="navbar-brand">
-          <Link className="navbar-item" href="/" title="AD Ventures home">
-            <img className="brand-mark" src="/img/ad-ventures-logo.png" alt="AD Ventures" />
+          <Link className="navbar-item" href="/" title="Ad Ventures Limited home">
+            <img className="brand-mark" src="/img/ad-ventures-logo.png" alt="Ad Ventures Limited" />
           </Link>
           <button
             className={`navbar-burger${menuOpen ? ' is-active' : ''}`}
